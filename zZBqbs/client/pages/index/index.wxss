@@ -1,0 +1,60 @@
+page, .container {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.fd-flex {
+  width: 100%;
+}
+
+.fix-top {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.fd-grid {
+  width: 100%;
+  padding-top: 120rpx;
+  min-height: 100vh;
+  background: white;
+}
+
+.fd-grid image {
+  width: 246rpx;
+  height: 246rpx;
+  display: block;
+  float: left;
+  padding: 0 !important;
+  border: 2rpx solid transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fd-grid .clear {
+  margin-top: 10rpx;
+  clear: both;
+  display: block;
+}
+
+.fd-grid image::after {
+  display: none;
+  height: 0px;
+}
+
+form {
+  background: white;
+}
+
+[name="input"] {
+  background: #f0f0f0;
+  margin: 20rpx;
+  padding: 10rpx 10rpx;
+  text-align: center;
+}
+
+[name="input"]::-moz-placeholder, [name="input"]::-webkit-input-placeholder {
+  color: #fff;
+}

@@ -1,0 +1,16 @@
+<view class="container">
+  <form class='fd-flex fix-top' bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      <input id="query" name="input" placeholder="查一查" value="{{word}}"
+      confirm-type="search" bindconfirm="bindConfirm" bindinput="bindInput"
+       />
+    </view>
+  </form>
+  <view class='fd-grid' >
+      <image mode="aspectFill" wx:for="{{images}}" data-index='{{index}}' wx:for-item="item" wx:key="{{item.fileName}}" src="{{item.fileParent+item.fileName}}"  bindtap='previewImage' 
+      style="background-image: url('./loading.gif');"
+      ></image>
+  <view class='clear' style="width:750rpx;text-align:center;font-size:12px;color:lightgray">{{bottomText}}</view>
+   <view style="width:750rpx;text-align:center;font-size:10px;color:lightgray">----zZ表情包----</view>
+  </view>
+</view>
