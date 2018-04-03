@@ -3,24 +3,25 @@
  */
 
 // 此处主机域名修改成腾讯云解决方案分配的域名
-var host = 'https://133621287.sagocloud.com';// 'https://dhfskayc.qcloud.la';
+// var host = 'https://133621287.sagocloud.com';
+var host= 'https://dhfskayc.qcloud.la';
 
 var config = {
     // 下面的地址配合云端 Demo 工作
     service: {
         host,
-        imagesUrl: `${host}/weapp/images`,
+        imagesUrl: `${host}/v1/bqb/images`,
         // 登录地址，用于建立会话
-        loginUrl: `${host}/weapp/login`,
+        loginUrl: `${host}/v1/bqb/login`,
 
         // 测试的请求地址，用于测试会话
-        requestUrl: `${host}/weapp/user`,
+        requestUrl: `${host}/v1/bqb/user`,
 
         // 测试的信道服务地址
-        tunnelUrl: `${host}/weapp/tunnel`,
+        tunnelUrl: `${host}/v1/bqb/tunnel`,
 
         // 上传图片接口
-        uploadUrl: `${host}/weapp/upload`
+        uploadUrl: `${host}/v1/bqb/upload`
     }
 };
 

@@ -13,6 +13,7 @@ const { mysql } = require('../qcloud')
 //   }
 // })
 module.exports = async (ctx, next) => {
+  await next();
   //
   // if (ctx.protocol != "https"){
   //   return;
